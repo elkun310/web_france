@@ -11,7 +11,7 @@
                 <h3>HỘI CỔ ĐỘNG VIÊN ĐỘI TUYỂN PHÁP TẠI VIỆT NAM</h3>
                 <h5>#FiersdetreBleus</h5>
                 <ul class="actions">
-                    <li><img src="https://doituyenphap.com/images/les-bleus -vietnam-logo.png" alt="lesbleus-logo" class="img-responsive"></li>
+                    <li><img src="../assets/images/logo.png" alt="lesbleus-logo" class="img-responsive"></li>
                 </ul>
             </div>
         </section>

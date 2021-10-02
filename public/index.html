@@ -8,8 +8,9 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title> Les Bleus Vietnam | Hội cổ động viên đội tuyển Pháp tại Việt Nam</title>
     <meta name="description" content="Les Bleus Vietnam - Hội cổ động viên đội tuyển Pháp tại Việt Nam.">
-    <link rel="stylesheet" href="https://doituyenphap.com/css/bootstrap4.min.css" />
-    <link rel="stylesheet" href="https://doituyenphap.com/css/frontend/main.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>css/bootstrap4.min.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>css/main.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>css/font-awesome.min.css" />
 </head>
 
 <body class="landing is-mobile">
@@ -19,12 +20,55 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <!-- Scripts -->
-    <script src="https://doituyenphap.com/js/jquery.min.js"></script>
-    <script src="https://doituyenphap.com/js/jquery.scrollex.min.js"></script>
-    <script src="https://doituyenphap.com/js/jquery.scrolly.min.js"></script>
-    <script src="https://doituyenphap.com/js/skel.min.js"></script>
-    <script src="https://doituyenphap.com/js/util.js"></script>
-    <script src="https://doituyenphap.com/js/main.js"></script>
+    <script src="<%= BASE_URL %>js/jquery.min.js"></script>
+    <script src="<%= BASE_URL %>js/jquery.scrollex.min.js"></script>
+    <script src="<%= BASE_URL %>js/jquery.scrolly.min.js"></script>
+    <script src="<%= BASE_URL %>js/skel.min.js"></script>
+    <script src="<%= BASE_URL %>js/util.js"></script>
+    <script src="<%= BASE_URL %>js/main.js"></script>
+
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "834499913246226");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-35EC3DE3G1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-35EC3DE3G1');
+    </script>
 </body>
 
 </html>
